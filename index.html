@@ -3,9 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Article</title>
 </head>
 <body>
     
+     <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <img class="header__logo" src="./image/icon/logo.png" alt="Logo">
+
+            <nav class="header__nav">   <!-- блок навигации -->
+                <ul class="header__list">
+                    <li>
+                        <a href="!#">О нас</a>
+                    </li>
+                    <li>
+                        <a href="!#">Тарифы</a>
+                    </li>
+                    <li>
+                        <a href="!#">Для бизнеса</a>
+                    </li>
+                    <li>
+                        <a href="!#!">Психологам</a>
+                    </li>
+                    <li>
+                        <a href="!#">Сертификат</a>
+                    </li>
+                    <li>
+                        <a href="!#">Материалы <img src="./image/icon/vector.png" alt="icon"></a>
+                    </li>
+                    <li>
+                        <a href="!#">FAQ</a>
+                    </li>
+                </ul>    
+            </nav>
+            <a class="btn btn__header" href="!#">Подобрать психолога</a>
+        </div>
+    </header>
+
+    <!-- Сплошная линия -->
+    <div class="header__line"></div> 
+
+    <!-- Вкладки -->
+     <main class="page container">
+        <article class="content">
+            <nav class="breadclumb">
+                <ul>
+                    <li class="breadclumb__item"><span>Главная</span><img class="arrow" src="./image/icon/arrow.svg" alt="icon"></li>
+                    <li class="breadclumb__item"><span>Блог</span><img class="arrow" src="./image/icon/arrow.svg" alt="icon"></li>
+                    <li class="breadclumb__item"><span>Как не утонуть в тревоге и управлять своими страхами</span></li>
+                </ul>
+        </nav>
+
+        <!-- Заголовок -->
+        <h1 class="content__header">Как не утонуть в тревоге и управлять своими страхами</h1>
+  </article>
+
+  <aside class="sidebar">
+    <section class="card cta">
+      <img src="./image/icon/child.png" alt="" class="ill">
+      <h3>Загружаем свободные окошки</h3>
+      <p>Все в порядке, сейчас мы перенаправим вас в сервис записи Qlick, через который удобно выбрать дату,  время встречи и оплатить её</p>
+      <a class="btn__sidebar" href="#">Подробнее</a>
+    </section>
+
+    <section class="card profile">
+      <img class="avatar" src="./image/icon/Liliya.png" alt="Лилия">
+      <h3>Лилия</h3>
+      <p class="role">Психолог</p>
+      <ul class="bullets">
+        <li>Опыт 8 лет</li>
+        <li>Тревога и панические атаки</li>
+      </ul>
+      <a class="btn__sidebar" href="#">Подробнее</a>
+    </section>
+
+    <a class="banner" href="#"><img src="./image/icon/present.png" alt="Дарите заботу"><h3>Дарите заботу</h3></a>
+
+    <section class="card price">
+      <h3>8 видео-сессий</h3>
+        <p class="price-val">18 500 ₽</p>
+                <a class="btn__sidebar" href="#">Купить</a>
+            </section>
+        </aside>
+    </main>
 </body>
 </html>  
