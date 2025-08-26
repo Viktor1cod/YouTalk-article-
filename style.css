@@ -192,30 +192,37 @@ img {
 }
 
 /* карточка с картинкой и кнопкой снизу */
-.card.cta{ 
-    grid-template-rows:auto auto 1fr auto; 
+ .cta  { 
+  max-width: 280px;         /* ширина карточки */
+  background: #E6F7FA;      /* голубой фон */
+  border-radius: 12px;      /* скругления */
+  padding: 20px;            /* внутренние отступы */
+  text-align: center;       /* текст и кнопка по центру */
 }
-.card .ill{ width:100%;
-    height:auto; 
-    display:block; 
-    border-radius:8px; 
+
+h3 {
+    font-size: 18px; 
+    font-weight: 700;
 }
+
 .btn__sidebar{ 
-    justify-self:start; 
+    justify-self:center; 
+    background: #03B2A5;
+    color: #fff;
+    border-radius: 12px;
+    padding: 15px 70px;
+    
 }
 
 /* профиль — сетка: аватар слева, текст справа */
 
-.card.profile .avatar{
-  grid-row:1 / span 2;
-  width:56px; 
-  height:56px; 
-  border-radius:50%; 
-  object-fit:cover;
+.card .profile {
+  max-width: 280px;         /* ширина карточки */
+  border-radius: 12px;      /* скругления */
+  padding: 20px;            /* внутренние отступы */
+  text-align: center;       /* текст и кнопка по центру */
 }
-.card.profile .role{ 
-    color:#6b7280; 
-}
+
 
 /* баннер — просто блок на всю ширину */
 .banner{ 
@@ -233,4 +240,170 @@ img {
 .card.price .price-val{ 
     font-weight:700; 
     font-size:20px; 
+}
+
+.content__cards {
+  display: flex;
+  flex-direction: column; /* выстраиваем элементы сверху вниз */
+  align-items: center;    /* выравниваем по центру */
+  text-align: center;   
+  padding: 10px;
+}
+
+h4 {
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.bullets {
+    display: flex;
+    align-items: center;
+    opacity: 50%;
+}
+
+.column__inf {
+    display: grid;
+    gap: 8px;
+    list-style: url("./image/icon/Ellipse.png");
+}
+
+.ellipse {
+    width: 6px;
+    padding: 4px;
+}
+
+.card__title {
+  position: relative;
+  padding-top: 15px; /* отступ от линии */
+}
+
+.card__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;        /* линия на всю ширину */
+  height: 1px;
+  background-color: #ccc;
+}
+
+.price {
+  padding: 30px;      /* 👉 внутренние отступы */
+  width: 100%;
+  box-sizing: border-box; /* чтобы padding учитывался в общей ширине */
+  text-align: start;
+  position: relative;;
+}
+
+.present {
+    position: relative;
+    width: auto;
+    
+}
+
+.present__content {
+  position: absolute;
+  padding: 40px;
+  margin: 0;
+}
+.blue {
+    color: #2963A3;
+    
+}
+
+.card-img {
+  position: absolute;
+  bottom: 0;   /* прижать к низу */
+  right: 0;    /* прижать к правому краю */
+  width: 80px; /* можно подогнать размер */
+}
+
+.btn__pay {
+    position: absolute;
+    width: 100px;
+    bottom: -45px;   /* отступ от нижнего края */
+    left: 15px;     /* отступ от левого края */
+    background: #00b3a0;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.date__title {
+  max-width: 1440px;
+  padding: 15px 0 0 35px;
+}
+
+.water {
+    max-width: 1440px;
+    padding: 25px 0 0 35px;
+}
+
+.img__water {
+    width: 690px;
+    height: 330px;
+}
+
+.mama__title {
+    padding: 25px 0 0 35px;
+}
+
+.title__text {
+    padding-bottom: 15px;
+}
+
+.title__list {
+    padding: 10px;
+}
+
+.mama__list {
+    padding: 5px;
+}
+
+.mama__list .pad {
+    margin-left: 50px;
+}
+
+.mama__list .rad {
+    margin-left: 70px;
+}
+
+.mama__list .mad {
+    margin-left: 90px;
+}
+
+.title__info {
+    padding: 25px 0 0 35px;
+}
+
+.info__text {
+    font-size: 25px;
+}
+
+.citata {
+    padding: 25px 0 0 35px;
+}
+
+.anxiety {
+    padding: 25px 0 0 35px;
+}
+
+.step {
+    padding: 25px 0 0 35px;
+}
+
+.img__step {
+    width: 690px;
+    height: 330px;
+}
+
+.step__text {
+    color: #868686;
+}
+
+.tit__text {
+    padding: 25px 0 0 35px;
 }
