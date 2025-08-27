@@ -192,7 +192,7 @@ img {
 }
 
 /* карточка с картинкой и кнопкой снизу */
- .cta  { 
+ .ctaa  { 
   max-width: 280px;         /* ширина карточки */
   background: #E6F7FA;      /* голубой фон */
   border-radius: 12px;      /* скругления */
@@ -407,3 +407,381 @@ h4 {
 .tit__text {
     padding: 25px 0 0 35px;
 }
+
+.quote-block {
+  position: relative;
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  padding: 40px;
+}
+
+.quote-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;   /* регулируй размер */
+  opacity: 0.7;   /* полупрозрачность */
+  z-index: -1;    /* уводим за текст */
+}
+
+.media-text{
+  /* центрирование блока на странице; не обязательно */
+  max-width: auto;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1.2fr; /* слева картинка, справа текст */
+  align-items: start;
+}
+
+.media-text__img{
+  padding: 15px;
+}
+
+.media-text__img img{
+  padding: 30px;
+  margin-right: 40px;
+}
+
+.media-text__content{
+  color: #2a2a2a;
+  font-size: 18px;
+  padding: 40px;
+}
+
+.exercise{
+  max-width: 690px;                /* ширина блока */
+  margin: 0 auto;                  /* по центру страницы */
+  padding: 18px 22px;              /* внутренние отступы */
+  background: #FFF6E3;
+  border-radius: 8px;
+  margin-top: 25px;
+}
+
+.exercise__title{
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.exercise__two {
+  max-width: 690px;                /* ширина блока */
+  margin: 0 auto;                  /* по центру страницы */
+  padding: 18px 22px;              /* внутренние отступы */
+  background: #FFE8D6;
+  border-radius: 8px;
+  margin-top: 25px;
+}
+
+.exercise__title__two {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cardss{
+  max-width: 690px;
+  margin: 0 auto;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.cardes{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card__img{
+  width: 100%;
+  object-fit: cover;     /* без искажений */
+  border-radius: 6px;
+  display: block;
+}
+
+.card__text{
+  margin: 0;
+  color: #2b2b2b;
+  font-size: 16px;
+}
+
+.lightning {
+  width: 690px;
+  margin: 0 auto;                /* сам блок по центру страницы */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;   
+}
+
+.exercise__three {
+  max-width: 690px;                /* ширина блока */
+  margin: 0 auto;                  /* по центру страницы */
+  padding: 18px 22px;              /* внутренние отступы */
+  background: #DDF5EE;
+  border-radius: 8px;
+  margin-top: 25px;
+}
+
+.exercise__title__three {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.bottom {
+  width: 690px;
+  margin: 0 auto;                /* сам блок по центру страницы */
+  display: grid;
+  padding: 25px;
+}
+
+.list__bottom {
+    color: #2963A3;
+}
+
+.section{ 
+    position: relative;  /* якорь */
+    height: 300px;
+}   
+.decor{
+  position: absolute;              /* внутри .section */
+  right: 0;                        /* вплотную к правому краю блока */
+  top: 95%;
+  bottom: -200px;
+  transform: translateY(-95%);
+}
+
+/* контейнер секции */
+.cta{
+  width: 1440px;
+  margin: 0 auto;
+  padding: 40px 16px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr; /* текст | картинка */
+  gap: 40px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;                 /* обрезаем выступающую каплю */
+}
+
+/* текст */
+.cta__text h2{
+  margin: 0 0 12px;
+  font-size: 42px;
+  line-height: 1.15;
+  font-weight: 800;
+  color: #333;
+}
+.cta__text p{
+  margin: 0 0 20px;
+  font-size: 16px;
+  color: #5a6772;
+}
+
+/* кнопка */
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 10px;
+  background: #20c5ae;   /* мятный */
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* иллюстрация справа */
+.cta__pic img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* декоративная «капля», прижатая к правому краю */
+.cta__blob{
+  position: absolute;          
+  right: 0;
+  z-index: 0;
+}
+
+
+.footer {
+  padding: 35px 0 0 50px;
+}
+
+.footer .footer__top {
+  display:grid;
+  grid-template-columns: 420px 1fr 220px; /* столбцы, середина — подписка */
+  align-items:start;
+}
+
+.footer .container  {
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2963A3;
+  max-width: 1440px;
+  color: #fff;  
+
+}
+
+.footer__top a {
+  color: #fff;
+}
+
+.footer__nav {
+  display:grid;
+  grid-template-columns: repeat(2, minmax(160px,1fr));
+  gap:40px;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.footer__list-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.subscribe__form input {
+   border:0;   
+}
+
+.subscribe__form{
+  display:flex; 
+  position: relative; 
+  background:#fff; 
+  max-width:420px;
+  border-radius: 15px;
+}
+
+.subscribe__input{
+  flex:1;
+  border:0;
+  padding:12px 14px;
+  font-size:16px;
+  outline:none;
+  color:#1f2937;
+}
+
+.sub__btn{
+  height: 50px;
+  border: 0;
+  border-radius:10px;    /* скругление всего блока */
+  overflow:hidden;   
+  color:#fff;
+  justify-content: end;   /* прижать к правому краю */
+  display: flex;
+  padding: 0;
+}
+
+.paragraph{
+  margin:10px 0 0;
+  max-width:520px;
+  font-size:13px;
+}
+
+
+.footer__images{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer__title {
+  display: flex;
+  align-items: center;
+}
+
+
+/* низ футера */
+.footer__bottom{
+  border-top:1px solid rgba(255,255,255,.25);  /* тонкая линия сверху */
+  width: 1200px;
+  max-height: 100px;
+  margin: 50px;
+  margin-right: -35px;
+}
+
+
+.footer__row{
+  display:flex;
+  align-items:center;
+  gap:28px;                 /* расстояния между пунктами */
+  flex-wrap:wrap;           /* чтобы переносилось на узких экранах */
+  padding:12px 0 18px;
+  color:#FFFFFF;
+  opacity: 70%;
+}
+
+/* Адаптация сайта */
+
+
+@media (max-width: 1024px) {
+ .header {
+  display: flex;
+  justify-content:end; /* логотип слева, кнопка справа */
+  align-items: center;            /* ← выравнивание по вертикали */
+  padding: 0 20px;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.header__nav {
+  width: 627px;
+  padding-left: 80px;
+  gap: 20px;
+}
+
+.header__nav a {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 0;
+}
+
+.header__line {
+  margin-top: 20px;
+}
+
+.btn__header {
+  margin-right: -300px;
+}
+
+.chips {
+    flex-wrap: wrap;
+  }
+
+.footer__images {
+  margin-left: 30px;
+  }
+}
+
